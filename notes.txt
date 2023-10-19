@@ -1,0 +1,50 @@
+To create a react application(it sets up everything)
+do: npx create-react-app .
+
+To run a react app at src file location
+do: npm start
+
+To search for a react snippet
+do: crt+alt+r
+
+react snippet for a module componant
+do: _rafce
+
+starting json data server:
+npx json-server -p 3500 -w data/db.json
+
+================================================================================
+React applications are built around components, a piece of the ui
+
+These components should be modular (combine, breakoff easily)
+
+For each js file, have a corresponding css file to decorate it.
+(unless a small project, in that case use one css file for everything)
+
+Twitter Example:
+You have a feed component,
+which has a tweet component,
+which has a like and share component
+
+JS classes here should have a state variable and a render method
+   State holds the data to be rendered, 
+   Render makes a react element, like a virtual DOM element 
+   (idea is we keep this in memory whenver needed)
+   We actually call this a virtual DOM
+
+Virtual DOMs are more efficient to change than Real DOMS, idea
+is we want to sync up changes with virtual DOM to Real DOM
+
+It's called React because when we change the state, the render()
+should automatically update what it looks like in the browser
+
+example component
+class Tweet {
+   state = {};
+   render() {
+
+   }
+}
+
+Using a css file for each js file has nothing much to do with scoping,
+it's mostly organization
